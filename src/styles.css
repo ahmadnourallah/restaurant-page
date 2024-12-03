@@ -34,8 +34,50 @@
 
 * {
     box-sizing: border-box;
+    margin: 0;
 }
 
 button {
     border: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+    padding-inline-start: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 15%;
+    background-color: var(--dark-blue);
+}
+
+header .logo {
+    color: var(--pink);
+    font-family: var(--fredoka);
+    font-weight: 900;
+    font-size: calc(2rem + 1vw);
+}
+
+header .nav {
+    display: flex;
+    gap: 5rem;
+    font-family: var(--poppins);
+    font-weight: 600;
+    color: var(--pale-yellow);
+}
+
+header .nav li {
+    transition: color 0.2s;
+}
+
+header .nav li:hover {
+    color: var(--pink);
 }
