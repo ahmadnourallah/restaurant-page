@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'Fredoka';
+    src: url('assets/fredoka.woff2') format('woff2'),
+         url('assets/fredoka.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sansita';
+    src: url('assets/sansitas.woff2') format('woff2'),
+         url('assets/sansitas.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('assets/poppins.woff2') format('woff2'),
+         url('assets/poppins.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --pink: #ed1250;
+    --pale-yellow: #fff6da;
+    --dark-blue: #042f4b;
+    --orange: #fbc99d;
+    --fredoka: "Fredoka", cursive;
+    --poppins: "Poppins", sans-serif;
+    --sansita: "Sansita", cursive;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+button {
+    border: 0;
+}
