@@ -111,12 +111,17 @@ header .nav li:hover {
     color: var(--orange);
 }
 
-#content .home button {
+#content .home .order-btn {
     background-color: var(--pink);
     font-size: 1.2rem;
     color: var(--pale-yellow);
     padding: .8rem 2rem;
     border-radius: 50px;
+    transition: 0.2s;
+}
+
+#content .home .order-btn:hover {
+    filter: brightness(90%);
 }
 
 #content .home svg {
