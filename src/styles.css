@@ -180,7 +180,7 @@ header .nav li:hover, header .nav li.active {
     flex-direction: column;
 }
 
-#content .menu, #content .about {
+#content .menu, #content .contact {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -220,4 +220,82 @@ header .nav li:hover, header .nav li.active {
 
 #content .menu .card .menu-item .body {
     font-family: var(--poppins);
+}
+
+#content .contact .card {
+    gap: 1rem;
+    font-family: var(--poppins);
+}
+
+#content .contact .card .contact-details > div {
+    display: flex;
+    gap: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+#content .contact .card .contact-details svg {
+    color: var(--pink);
+}
+
+#content .contact .card .contact-form form *:not(label) {
+    display: block;
+}
+
+#content .contact .card .contact-form form > div:first-child {
+    margin-top: .5rem;
+}
+
+#content .contact .card .contact-form form > div {
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+#content .contact .card .contact-form form > div:last-of-type {
+    margin-bottom: 1rem;
+}
+
+#content .contact .card .contact-form form label {
+    color: #666;
+    position: absolute;
+    transition: 0.2s;
+    top: -5px;
+}
+
+#content .contact .card .contact-form form input:focus + label, 
+#content .contact .card .contact-form form input:not(:placeholder-shown) + label, 
+#content .contact .card .contact-form form textarea:not(:placeholder-shown) + label,
+#content .contact .card .contact-form form textarea:focus + label {
+    top: -1.5rem;
+    color: var(--pink);
+    font-size: .8rem;
+}
+
+#content .contact .card .contact-form > form input, 
+#content .contact .card .contact-form > form textarea {
+    position: relative;
+    background-color: inherit;
+    font: inherit;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid var(--dark-blue);
+    resize: none;
+}
+
+#content .contact .card .contact-form > form textarea {
+    height: 5rem;
+}
+
+#content .contact .card .contact-form button {
+    font: inherit;
+    background-color: var(--pink);
+    color: var(--pale-yellow);
+    border-radius: 5px;
+    padding: .5rem 2rem;
+}
+
+#content .contact .card .contact-map iframe {
+    width: calc(550px + 1vw);
+    height: calc(400px + 1vh);
 }
