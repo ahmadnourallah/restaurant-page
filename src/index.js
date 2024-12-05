@@ -9,15 +9,12 @@ const Display = (function () {
 
     homeBtn.addEventListener("click", event => {
         event.preventDefault();
+        contentContainer.replaceChildren();
         displayHome();
     });
 
-    function emptyContentContainer() {
-        contentContainer.replaceChildren();
-    }
-
     function displayHome() {
-        emptyContentContainer();
+        contentContainer.replaceChildren();
         contentContainer.appendChild(Home.render(() => console.log("ok")));
     }
     

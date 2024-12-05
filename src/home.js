@@ -1,8 +1,9 @@
 const Home = (function () {
-    const homeContainer = document.createElement("div");
-    homeContainer.classList.add("home");
 
     function render(orderBtnCallback) {
+        const homeContainer = document.createElement("div");
+        homeContainer.classList.add("home");
+    
         const h1 = document.createElement("h1");
         h1.innerHTML = "Come on down for <br> some delicious cuisine!";
         homeContainer.appendChild(h1);
