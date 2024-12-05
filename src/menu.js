@@ -6,6 +6,11 @@ const Menu = (function () {
         const menuContainer = document.createElement("div");
         menuContainer.classList.add("menu");
 
+        const sectionTitle = document.createElement("h2");
+        sectionTitle.classList.add("section-title");
+        sectionTitle.innerText = "Menu";
+        menuContainer.appendChild(sectionTitle);
+
         const card = document.createElement("div");
         card.classList.add("card");
 
