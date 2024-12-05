@@ -84,7 +84,7 @@ header .nav li {
     transition: color 0.2s;
 }
 
-header .nav li:hover {
+header .nav li:hover, header .nav li.active {
     color: var(--pink);
 }
 

@@ -20,12 +20,21 @@ const Display = (function () {
         displayMenu();
     });
 
+    function toggleActive(btn) {
+        const currentBtn = document.querySelector(".nav li.active");
+        if (currentBtn) currentBtn.classList.remove("active");
+
+        btn.classList.add("active");
+    }
+
     function displayHome() {
+        toggleActive(homeBtn);
         contentContainer.replaceChildren();
         contentContainer.appendChild(Home.render(displayMenu));
     }
     
     function displayMenu() {
+        toggleActive(menuBtn);
         contentContainer.replaceChildren();
         contentContainer.appendChild(Menu.render());
     }
